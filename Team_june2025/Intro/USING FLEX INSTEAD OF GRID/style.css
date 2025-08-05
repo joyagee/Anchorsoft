@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(lightblue, darkblue);
+  min-height: 100vh;
+}
+
+.usercontainerflex {
+  background-color: aqua;
+  min-height: 30vh;
+  width: 100%;
+  margin: 5rem auto;
+  border-radius: 5px;
+  padding: 0.5rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userinfoflex {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.userdetailsflex {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 80%;
+}
+
+.Nameflex {
+  display: flex;
+  justify-content: center;
+}
+
+.bioflex {
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.userimageflex {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: aquamarine;
+  background-image: url(lady.jpg);
+  place-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 1px 8px 2px rgb(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600.1px) {
+  .userdetailsflex {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .userdetailsflex  {
+    width: 30%;
+  }
+} 

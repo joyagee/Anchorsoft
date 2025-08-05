@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(lightblue, darkblue);
+  min-height: 100vh;
+}
+
+.usercontainer {
+  background-color: aqua;
+  min-height: 30vh;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 0.5rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.userinfo {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.userdetails {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 90%;
+}
+
+.Name {
+  display: flex;
+  justify-content: center;
+}
+
+.bio {
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.userimage {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: aquamarine;
+  background-image: url(lady.jpg);
+  place-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 1px 8px 2px rgb(0, 0, 0, 0.5);
+}
+
+@media (min-width: 0px) {
+  .usercontainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 600.1px) {
+  .usercontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .usercontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 

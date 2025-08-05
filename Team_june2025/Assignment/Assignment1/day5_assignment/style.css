@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.tim {
+border-collapse:  1px solid;  
+width: 50%; 
+border: 1px; 
+padding: 2px;
+text-align: center;
+margin: 2rem auto;
+border-radius: 5px;
+background-color: aquamarine;
+
+} 
+
+table tr:nth-child(odd) {
+    background-color: rgb(110, 89, 89);
+}
+
+table th {
+    background-color: blue;
+}
+
+/* 
+ background-color: honeydew ;
+    margin: 2rem auto;
+    width: 60%;
+    border-radius: 5px; */
+
+    /* .cap{
+        height: 200pxh;
+        width: 200px;
+        border-radius: 100%;
+        background: url(/image/jollof.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } */
+
+table  .cap{
+width: 100px;
+height: 100%;
+overflow: hidden;
+border-radius: 50%;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+table  .cap img{
+width: 100px;
+height: 100%;
+object-fit: cover;
+align-self: center;
+
+
+    }

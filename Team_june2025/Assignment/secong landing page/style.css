@@ -1,0 +1,767 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contain {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* background-color: aqua; */
+  /* min-height: 150vh; */
+}
+
+.header {
+  background-color: white;
+  /* min-height: 30vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  height: 64px;
+
+  box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.6);
+
+  .menubtn {
+    cursor: pointer;
+    display: none;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign {
+    color: white;
+    text-decoration: none;
+  }
+  .start {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+  }
+  .circle {
+    background-color: rgb(96 148 212);
+    width: 65.5px;
+    height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+
+    &&:hover {
+      background-color: blue;
+      scale: 1.1;
+    }
+  }
+}
+
+.banner1 {
+ /* height: 593.333px; */
+
+
+  .banner1image{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/actual\ river.jpg);
+  background-size: cover;
+
+  height: 100vh;
+
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .child {
+    /* background-color: blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+
+    .banner1chidtext {
+      /* background-color: rgb(132, 123, 139); */
+      /* width: 80px;
+            height: 110px ;  */
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    .banner1chidemail {
+      display: flex;
+      /* background-color: brown; */
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+
+
+
+      .circlex {
+        background-color: rgb(96 148 212);
+        width: 70.5px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text2 {
+          color: white;
+        }
+      }
+
+      input {
+        height: 50px;
+        width: 410.885px;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+}
+
+.banner2 {
+  /* background-color: aqua; */
+  /* padding: 1rem; */
+   /* height: 384px; */
+      width: 100%;
+
+  .bann {
+    display: flex;
+    /* background-color: brown; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+     /* height: 384px; */
+      width: 100%;
+
+    .child1 {
+      /* background-color: yellow; */
+      /* height: 384px; */
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+
+      .child1_child {
+        /* background-color: olivedrab; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        .child1_child1 {
+          /* background-color: indigo; */
+          font-size: 24px;
+          font-weight: 600;
+          color: black;
+          padding: 0 2rem;
+        }
+
+        .child1_child2 {
+          /* background-color: peru; */
+          font-size: 18px;
+          font-weight: 100;
+          color: black;
+        }
+      }
+    }
+    .child2 {
+      background-color: plum;
+      height: 384px; 
+      width: 50%;
+      background: url(image/phonehand.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.banner3 {
+  background-color: rgb(207 205 205 ); 
+  /* height: 344px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+
+  .banner3child1 {
+     /* background-color: yellow; 
+    height: 184px;
+    width: 379.344px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    .imagebx {
+      background: url(image/b3im1.jpeg);
+      background-size: cover;
+      height: 80px;
+      width: 80px;
+    }
+    .bostrap5 {
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+    }
+    .framwrk {
+      font-size: 18px;
+      font-weight: 100;
+      color: black;
+      padding: 0 2.5rem;
+      text-align: center;
+    }
+  }
+
+  .banner3child2 {
+    /* background-color: pink; */
+    /* height: 184px;
+    width: 379.344px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    .imageby {
+      background: url(image/b3im2.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 80px;
+      width: 80px;
+    }
+    .bostrap2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+    }
+    .framwrk2 {
+      font-size: 18px;
+      font-weight: 100;
+      color: black;
+      padding: 0 3rem;
+      text-align: center;
+    }
+  }
+
+  .banner3child3 {
+    /* background-color: orangered; */
+    /* height: 184px;
+    width: 379.344px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    .imagebz {
+      background: url(image/b3im3.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: 80px;
+      width: 80px;
+    }
+    .bostrap3 {
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+    }
+
+    .framwrk3 {
+      font-size: 18px;
+      font-weight: 100;
+      color: black;
+      padding: 0 3rem;
+      text-align: center;
+    }
+  }
+}
+
+.banner4{
+  /* background-color: white; */
+  /* padding: 0.5rem; */
+  /* height:384px ; */
+    width:100% ;
+  
+
+  .bann4 {
+    /* background-color:brown ; */
+    /* height:384px ; */
+    width:100% ;
+    display: flex;
+
+  .codeimg {
+    
+    background: url(image/codeimg.jpeg);
+    background-size: cover;
+    background-position: center;
+     height: 384px;  
+    width: 50%;
+    /* background-color: blueviolet; */
+  }
+
+  .banner4text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+     /* height: 384px; */
+     width: 50%;
+    
+    /* background-color: red; */
+    .textbanner4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+      
+  .boostrapbanner4 {
+      color: black;
+      font-size: 24px;
+      font-weight: 600;
+      /* background-color: palevioletred; */
+    }
+    .frawrkbanner4 {
+      color: black;
+      font-size: 18px;
+      font-weight: 100;
+      /* background-color: yellowgreen; */
+      text-align: center;
+      padding: 0 3rem;
+    }
+    }
+
+  
+  }
+  }
+}
+
+.banner5 {
+  /* background-color: blue; */
+  .bann5{
+    /* background-color: plum; */
+    /* height:384px ; */
+    width:100% ;
+    display: flex;
+
+    .bann5img {
+      /* background-color: purple; */
+       height:384px ; 
+    width:50% ;
+    background: url(image/bann5img.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    }
+
+    .bann5text {
+      /* background-color: brown; */
+     /* height:384px ; */
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+
+    .bann5textdiv {
+      /* background-color: green; */
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+      .bann5text1 {
+      /* background-color: tomato; */
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+      justify-content: center;
+      align-items: center;
+    }
+    .bann5text2 {
+      font-size: 18px;
+      font-weight: 100;
+      color: black;
+      /* background-color: turquoise; */
+      padding: 0 2rem;
+    }
+    }
+
+    
+    }
+  }
+}
+.banner6
+{
+  background-color: rgb(207 207 207);
+  /* height:526px ; */
+  width:100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  
+
+  .banner6text1{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    /* height:32px ;
+  width:274.27px; */
+  justify-content: center;
+  align-items: center;
+
+
+  }
+
+  .banner6text2{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    gap: 1rem;
+    /* height:318px ;
+  width: 1104.67px; */
+
+.can{
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  /* height:302px ;
+  width: 391.479px; */
+
+
+  .banner6text2div1img {
+   background: url(image/ban61mg3.jpg); 
+    box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    width: 150px;
+    border-radius: 100%;
+
+  }
+  .banner6text2div1text {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+
+  }
+.banner6text2div1text2 {
+     font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+  .banner6text2div2img {
+  background: url(image/bann6img.jpg);
+   box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    width: 150px;
+    border-radius: 100%;
+  }
+  .banner6text2div2text {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+
+  }
+.banner6text2div2text2 {
+     font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.banner6text2div3img {
+  background: url(image/bann6img1.jpg);
+   box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    height:150px;
+    width: 150px;
+    border-radius: 100%;
+  }
+  .banner6text2div3text {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+
+  }
+.banner6text2div3text3 {
+     font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+}
+  }
+}
+  
+.banner7 {
+  .banner7img{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/actual\ river.jpg);
+  background-size: cover;
+height:50vh; 
+/* width: 100%; */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .child {
+    /* background-color: blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+
+    .banner1chidtext {
+      /* background-color: rgb(132, 123, 139); */
+      /* width: 80px;
+            height: 110px ;  */
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    .banner1chidemail {
+      display: flex;
+      /* background-color: brown; */
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+
+      .circlex {
+        background-color: rgb(96 148 212);
+        width: 70.5px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text2 {
+          color: white;
+        }
+      }
+
+      input {
+        width: 60%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+      }
+    }
+    }
+  }
+}
+
+.Footer {
+  /* background-color: teal; */
+  /* height:164px ; */
+  width:100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+
+.footer1div{
+  /* background-color: brown; */
+  /* height:132px ; */
+  width:45% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+   gap: 1rem; 
+  flex-direction: column;
+
+   .footer1divlinks {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  /* height:132px ;
+  width:616px ; */
+  .abt {
+    color: black;
+    font-size: 16px;
+    font-weight:100 ;
+  }
+
+   .con {
+    color: black;
+    font-size: 16px;
+    font-weight:100 ;
+  }
+   .tem {
+    color: black;
+    font-size: 16px;
+    font-weight:100 ;
+  }
+   .pri {
+    color: black;
+    font-size: 16px;
+    font-weight:100 ;
+  }
+
+  }
+  .footertext {
+    color: black;
+    font-size: 16px;
+    font-weight:100 ;
+  }
+
+ 
+}
+.footerlink {
+  /* background-color: peru; */
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+   /* height: 31px; */
+    width: 45%;
+
+  .facebook {
+    background: url(image/actface.jpg);
+      background-size: cover;
+      background-position: center;
+     height: 24px;
+    width: 24px;
+  }
+  .instagram {
+    background: url(image/insta.jpg);
+      background-size: cover;
+      background-position: center;
+     height: 24px;
+    width: 24px;
+  }
+  .twitter {
+    background: url(image/twiter.jpg);
+      background-size: cover;
+      background-position: center;
+    height: 24px;
+    width: 24px;
+  }
+
+}
+}
+
+@media (max-width: 768px) {
+  .banner1image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+  }
+
+  .banner3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner2 {
+  .bann {
+    flex-direction:column-reverse;
+    width: 100%; 
+
+    .banner2child{
+      width: 100%;
+    }
+    .child2{
+      width: 100%;
+    }
+  }
+}
+
+.banner4 {
+.bann4 {
+  flex-direction: column;
+  width: 100%;
+
+.codeimg {
+  width: 100%;
+}
+.banner4text {
+  width: 100%;
+}
+}
+}
+  
+.banner5 {
+  .bann5{
+    flex-direction: column-reverse;
+    width: 100%;
+  .bann5text{
+ width: 100%;
+}
+.bann5img{
+  width: 100%;
+}
+}
+  
+}
+  .Footer {
+    flex-direction: column;
+    .footer1div {
+      width: 100%;
+    }
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .banner1 {
+    .child {
+      /* background-color: blue; */
+      width: 100%;
+    }
+  }
+}

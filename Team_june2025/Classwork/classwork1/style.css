@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /* why do you have this here */
+}
+form {
+  background-color: blue;
+  width: 50%;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  width: 100%;
+  padding: 1cqh;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+form .input_parent{
+    margin-top: 2rem;
+    /* background-color: brown; */
+}
+
+.checkbox_header
+.select_header
+{
+margin-bottom: 10rem;
+/* padding: 1rem; */
+}
+
+form input[type="checkbox"] {
+    margin-left: 10px;
+}
