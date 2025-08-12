@@ -148,7 +148,7 @@ let statement = 7;
 // }
 
 
-// Strictly Equal to
+// Strictly not Equal to
 // if (statement !== "1") {
 //   console.log("statement", statement);
 // } else {
@@ -176,10 +176,60 @@ let statement = 7;
 //   console.log("Statment lesser!");
 // }
 
+// // . Less Than or Equal To (<=):
+// if (statement <= 7) {
+//   console.log("statement Greater!");
+// } else {
+//   console.log("Statment lesser!");
+// }
 
-// . Less Than or Equal To (<=):
-if (statement <= 7) {
-  console.log("statement Greater!");
-} else {
-  console.log("Statment lesser!");
+
+
+// classwork
+// create 2 object and 3 vairiable create an array that will house obj and var, 
+// get 1 string and 1 number of the object acess it from the array
+// , from the array change the value of 2 of your variable one of the var should be a constant
+
+
+//logical and (&&)
+
+// let result = 10 > 9 && 30 < 20;
+
+
+// //logical OR (||)
+// let result2 = 10 > 9 || 30 < 20;
+
+// //logical NOT (!)
+// let result3 = !(3 !== "3");
+// console.log(result3);
+
+// //TINARY
+// let age =17;
+// let hasdriverlincence = true ;
+
+// let result4=
+// age >= 18 && hasdriverlincence 
+// ? "you are eligible to drive."
+// : "you are not eligible to drive";
+
+// console.log(result4);
+
+const Averagechecker =(a, b, c)=> {
+  const average =(a + b + c)/3;
+  return average ;
+};
+
+
+const evenoddchecker=(a, b, c)=>{
+  const newAverage= Averagechecker(a, b, c);
+  const check= newAverage % 2 === 0 ? "isEven" : "isOdd"
+
+  return check ;
 }
+
+const checkaverageevenodd = evenoddchecker(4, 6, 8);
+console.log(checkaverageevenodd);
+
+
+
+
