@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 2px solid blueviolet;
+  min-height: 300px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.welcome {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+}
+.task_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  /* background-color: red;
+  height: 2rem; */
+}
+
+.chek {
+  text-decoration: line-through;
+}
+.inptt {
+  width: 60%;
+  padding: 1rem;
+  outline: none;
+}
+
+.addbtn {
+  width: 10%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  &&:hover {
+    background-color: blue;
+  }
+}
+
+.taskInput {
+  width: 70%;
+}
+
+.edit {
+  padding: 1rem;
+  width: 10%;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.editBtn {
+  background-color: rgb(138, 43, 226, 0.5);
+  &&:hover {
+    background-color: rgb(138, 43, 226, 0.8);
+  }
+}
+.checkBtn {
+  background-color: rgb(0, 128, 0, 0.5);
+  &&:hover {
+    background-color: rgb(0, 128, 0, 0.8);
+  }
+}
+.deleteBtn {
+  background-color: rgba(255, 0, 0, 0.5);
+  &&:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+}
+
+.btn {
+  transition: ease-in-out 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  width: 72%;
+  padding: 1rem;
+}
+
+.pdiv {
+  /* background-color: red; */
+  width: 100%;
+}

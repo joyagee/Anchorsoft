@@ -20,6 +20,9 @@ const Person2 = {
   is_Male: false,
 };
 
+
+
+
 // console.log(Person.name);
 // console.log(Person["name"]);
 
@@ -214,21 +217,392 @@ let statement = 7;
 
 // console.log(result4);
 
-const Averagechecker =(a, b, c)=> {
-  const average =(a + b + c)/3;
-  return average ;
+// const Averagechecker =(a, b, c)=> {
+//   const average =(a + b + c)/3;
+//   return average ;
+// };
+
+
+// const evenoddchecker=(a, b, c)=>{
+//   const newAverage= Averagechecker(a, b, c);
+//   const check= newAverage % 2 === 0 ? "isEven" : "isOdd"
+
+//   return check ;
+// }
+
+// const checkaverageevenodd = evenoddchecker(4, 6, 8);
+// console.log(checkaverageevenodd);
+
+
+//CLASSWORK
+
+
+// const OddEvenchecker =(a, b)=>{
+//   let sub = b-a;
+//   let mul = a*b
+// const check = (a % 2 === 1) > b ?   
+//   ;
+
+
+// return check ;
+// }
+// const result = OddEvenchecker =(5, 6);
+// console.log(result);
+
+//14 august class
+
+
+const receivers = (a, b) => {
+  let sum;
+  let mul;
+  const result =
+    a > b && a % 2 === 1
+      ? `  ${(sum = a - b
+      )}`
+      : `${(mul = a * b
+      )}`;
+  return result;
 };
 
+const final = receivers(5, 7);
+console.log(final);
 
-const evenoddchecker=(a, b, c)=>{
-  const newAverage= Averagechecker(a, b, c);
-  const check= newAverage % 2 === 0 ? "isEven" : "isOdd"
 
-  return check ;
+// const AverageChecker = (a, b, c) => {
+//   const average = (a + b + c) / 3;
+//   return average;
+// };
+
+// function smallestNumber(a, b, c) {
+//   let sum;
+//   const average = AverageChecker(a, b, c);
+//   let smallest;
+//   if (a < b && a < c) {
+//     smallest = a;
+
+//   } else if (b < a && b < c) {
+//     smallest = b;
+
+//   } else {
+//     smallest = c;
+
+//   }
+
+
+//   sum = smallest + average;
+//   return sum;
+
+
+// }
+
+// const result = smallestNumber(4, 2, 6);
+// console.log("Result:", result);
+
+
+//****Control flow */
+
+//if statement***
+const minAge = 18;
+let userAge;
+
+function checkEntry(age) {
+  if (age < minAge) {
+    console.log("Sorry, you are not allowed in here.");
+  } else {
+    console.log("Welcome to the site");
+  }
+}
+checkEntry(18);
+
+const gifting = (age, gender, name) => {
+  let details;
+  if (age < 18 && gender === "female") {
+    console.log("give them barbie");
+    details = `${name} was given a barbie`;
+  } else if (age < 18 && gender === "male") {
+    console.log("give them football");
+    details = `${name} was given a football`;
+  } else if (age >= 18 && gender === "female") {
+    console.log("give them brazillian hair");
+    details = `${name} was given brazillian hair`;
+  } else if (age >= 18 && gender === "male") {
+    console.log("give them a car");
+    details = `${name} was given a car`;
+  } else {
+    console.log("Unknown Fellow");
+    details = "NO gift given"
+  }
+
+  return details;
 }
 
-const checkaverageevenodd = evenoddchecker(4, 6, 8);
-console.log(checkaverageevenodd);
+// const result = gifting(18, "male", "Sam");
+// console.log("Result:", result);
+
+//Switch statement
+let dayscount = 7;
+let day;
+
+switch (dayscount) {
+  case 1:
+    //console.log("Monday");
+    day = "Monday";
+    break;
+  case 2:
+    //console.log("Tuesday");
+    day = "Tuesday";
+    break;
+  case 3:
+    //console.log("Wednesday");
+    day = "Wednesday";
+    break;
+  case 4:
+    //console.log("Thursday");
+    day = "Thursday";
+    break;
+  case 5:
+    //console.log("Friday");
+    day = "Friday";
+    break;
+  case 6:
+    //console.log("Saturday");
+    day = "Saturday";
+    break;
+  case 7:
+    //console.log("Sunday");
+    day = "Sunday";
+    break;
+
+  default:
+    console.log(" count day");
+
+    break;
+}
+
+//console.log("day:", day);
+
+//for loop
+const numList = [3, 5, 1, 8, 7, 2, 9, 4]
+for (let i = 0; i < numList.length; i++) {
+  const numResult =
+    numList[i] % 2 === 0 ? `${numList[i]} is even` : `${numList[i]} is odd`;
+  console.log(numResult);
+  console.log(i);
+}
+
+
+const numm = [3, 5, 1, 8, 7, 2, 9, 4];
+const AverageChecker = (num) => {
+  let sum = 0;
+
+  for (let i = 0; i < num.length; i++) {
+    sum = sum + num[i];
+    console.log(num[i]);
+    const check = num[i] % 2 === 0 ? `${num[i]} is even` : `${num[i]} is odd`;
+    console.log(check);
+  }
+
+  const average = sum / num.length;
+  return average;
+};
+
+function evenOddChecker(num) {
+  const newAverage = AverageChecker(num);
+
+  const check = newAverage % 2 === 0 ? "isEven" : "isOdd";
+  console.log();
+
+  return check, newAverage;
+}
+
+const checkAverageEvenOdd = evenOddChecker(numm);
+console.log(checkAverageEvenOdd);
+
+
+//factory example
+
+const creatcars = (name, colour, model, description) => {
+  return {
+    name,
+    colour,
+    model,
+    description() {
+      console.log(`cars like ${this.name} are common in  ${this.colour} colours ,with model ${this.model} are most common `);
+
+
+    },
+
+  }
+
+
+}
+const result = creatcars("toyota", "gray", 2007,);
+
+//constructionexample
+
+console.log("description:", result.description());
+
+function shoebrands (name,brand, price, colour, size, output) {
+this.name= name ;
+this.brand=brand ;
+this.price =price ;
+this.colour= colour ;
+this.size = size ;
+
+this.output =function () {
+      console.log(` ${this.name} have  ${this.brand} which you can purschase fo  ${this.price} best  ${this.colour}  available in size  ${this.size}`);
+};
+
+  
+};
+const results =new shoebrands ("nike", "pouch" ,"$47", "brown", 45 )
+console.log("description:", results.output());
+
+
+//assignment on construction
+// function product (name, price, type, sell,stock,quantity) {
+
+// }
+
+//26th AUGUST CLASS MORE EXAMPLES ON FACTORY EXAMPLES
+//FACTORY EXPLANATION
+const DelightPerson ={
+  name :"Delight",
+  age : 20,
+  greet: function (){
+    console.log(
+      `hello my name ${this.name} and i am ${this.age} years old`
+    );
+    
+  },
+}
+
+function personfactory (name, age, bio, sex, color) {
+  return {
+    name,
+    age,
+    bio,
+    sex,
+    color,
+
+    greet() {
+      console.log(`my name is ${this.name} and i am ${this.age} years old `);
+
+
+    },
+
+  }
+
+
+}
+
+const persn1= personfactory( "favour", 20, "i am a programmer","female","brownskin");
+console.log("person1:", persn1, "\n" ,"greet:", persn1.greet());
+
+const persn2= personfactory( "fred", 33, "i am a business inclined programmer","male","brownskin");
+console.log("person2:", persn2, "\n" ,"greet:", persn2.greet());
+
+
+//EXAMPLE CONTINUATION ON CONSTRUCTOR
+
+function HumanConstructor (name, age, bio, sex, color){
+this.name = name;
+this.age = age;
+this.bio = bio;
+this.sex = sex;
+this.color = color;
+
+this.greet = function(){
+  console.log(`my name is ${this.name} and i am ${this.age} years old`);
+  
+};
+
+}
+
+HumanConstructor.prototype.greet =function (name, bio) {
+  console.log(`my name is ${name}. ${bio}`);
+  
+}
+const human1 = new  HumanConstructor (
+  "malik", 23, "i am a business man", "male", "darkskin"
+)
+
+const human2 = new  HumanConstructor (
+  "Arnold", 23, "i am a business man", "male", "darkskin"
+)
+
+console.log("human1", human1,"greet", human1.greet);
+console.log("human2", human2,"greet", human2.greet);
+
+//28 august 2025
+
+const fruits =["apple", "banana", "orange", " mango", "pear"]
+console.log(fruits);
+fruits[1]= "grape";
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits, "\n");
+fruits.push("mango");
+console.log(fruits, "\n");
+
+
+fruits.unshift(2);
+console.log(fruits, "\n");
+console.log(fruits, "\n");
+fruits.shift();
+
+
+console.log( "previous fruit:", fruits, "\n");
+
+const sliceAdd= fruits.splice(1, 2, "66", "88");
+const slicee =fruits.splice(1,2)
+console.log( "sliced fruit:", fruits, "\n");
+console.log( "new sliceAdd:", sliceAdd, "\n");
+console.log( "neWlice:", slicee, "\n");
+
+const sliceTest= fruits.slice(1,3)
+console.log( "sliced fruit:", fruits, "\n");
+console.log( "sliceD:", sliceTest, "\n");
+fruits.forEach((item)=> console.log(item));
+
+
+
+
+
+//filter
+const nums = [1, 2 , 3 , 4, 5, 6]
+
+const doubleNumbers = numbers.map((number)=>number *2)
+numbers.filter((num)=> {
+  if (num % 2 !== 0) console.log(num);
+  
+});
+console.log(typeof doubleNumbers);
+
+const sum = numbers.reduce((acc, curr)=> acc + curr, 0);
+const less = numbers.find((num)=>num > 2)
+console.log("sum:", less);
+
+const hasEvenNumber = numbers.some((number)=>number % 2 === 0);
+console.log(hasEvenNumber);
+
+const allEvenNumber = numbers.every((number)=>number % 2 === 0);
+console.log(allEvenNumber);
+
+const indexx = numbers.findindex((num)=>num % 2 === 0);
+console.log("index:", indexx);
+
+numbers.reverse();
+console.log(numbers);
+
+console.log(numbers.includes(6));
+
+
+
+
+
+
 
 
 
